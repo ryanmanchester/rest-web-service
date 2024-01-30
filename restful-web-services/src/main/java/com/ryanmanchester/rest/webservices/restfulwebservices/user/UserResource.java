@@ -20,7 +20,7 @@ public class UserResource {
 	}
 	
 	@GetMapping("/users/{id}")
-	public List<User> retrieveUser(@PathVariable Integer id) {
+	public User retrieveUser(@PathVariable int id) {
 		return userService.findUser(id);
 	}
 

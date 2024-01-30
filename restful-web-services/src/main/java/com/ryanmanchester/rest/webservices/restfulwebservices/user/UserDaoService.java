@@ -20,8 +20,8 @@ public class UserDaoService {
 		return users;
 	}
 	
-	public List<User> findUser(Integer id) {
-		return users.stream().filter(user -> user.getId() == id).toList();
+	public User findUser(int id) {
+		return users.stream().filter(user -> user.getId() == id).findFirst().get();
 	}
 
 }
