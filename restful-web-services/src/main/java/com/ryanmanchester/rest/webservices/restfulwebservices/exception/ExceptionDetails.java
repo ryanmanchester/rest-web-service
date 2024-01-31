@@ -1,17 +1,18 @@
 package com.ryanmanchester.rest.webservices.restfulwebservices.exception;
 
-import java.time.LocalDate;
+
+import java.time.LocalDateTime;
 
 public class ExceptionDetails {
 	private String message;
 	private String details;
-	private LocalDate timestamp;
+	private LocalDateTime timestamp;
 	
-	public ExceptionDetails(String message, String details, LocalDate timestamp) {
+	public ExceptionDetails(String message, String details, LocalDateTime localDateTime) {
 		super();
 		this.message = message;
 		this.details = details;
-		this.timestamp = timestamp;
+		this.timestamp = localDateTime;
 	}
 
 	public String getMessage() {
@@ -22,7 +23,7 @@ public class ExceptionDetails {
 		return details;
 	}
 
-	public LocalDate getTimestamp() {
+	public LocalDateTime getTimestamp() {
 		return timestamp;
 	}
 	
