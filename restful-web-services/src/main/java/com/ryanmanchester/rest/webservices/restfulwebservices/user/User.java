@@ -9,10 +9,10 @@ public class User {
 	
 	private Integer id;
 	
-	@Size(min=2)
+	@Size(min=2, message = "Name must contain at least 2 characters")
 	private String name;
 	
-	@Past
+	@Past(message = "Birth date must be on or before today's date")
 	private LocalDate birthDate;
 	
 	
